@@ -1,0 +1,60 @@
+.trie-visualization {
+  background: linear-gradient(180deg, #fbfdff 0%, #eef6ff 100%);
+  border: 1px solid #d7e5f5;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.trie-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid #d7e5f5;
+  background: #ffffff;
+}
+
+.trie-edge {
+  stroke: #9db4d0;
+  stroke-width: 3;
+}
+
+.trie-edge-label {
+  fill: #3b82f6;
+  font-size: 13px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.trie-node {
+  fill: #dbeafe;
+  stroke: #60a5fa;
+  stroke-width: 3;
+}
+
+.trie-node-active {
+  fill: #fed7aa;
+  stroke: #f97316;
+}
+
+.trie-node-visited {
+  fill: #bbf7d0;
+  stroke: #22c55e;
+}
+
+.trie-node-terminal {
+  stroke-width: 5;
+}
+
+.trie-node-label {
+  fill: #0f172a;
+  font-size: 16px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.trie-operation {
+  margin-top: 12px;
+  color: #1e293b;
+  font-weight: 700;
+}

@@ -1,0 +1,21 @@
+.footer {
+  margin-top: auto;
+  padding: 26px 20px 34px;
+}
+
+.footer-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 22px 26px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(15, 139, 255, 0.20), transparent 26%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(18, 60, 107, 0.96) 100%);
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.16);
+}
+
+.footer p {
+  margin: 4px 0;
+  color: rgba(241, 245, 249, 0.84);
+  text-align: center;
+}

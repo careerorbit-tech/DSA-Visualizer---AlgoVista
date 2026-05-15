@@ -1,0 +1,55 @@
+:root {
+  --bg: #f4f7fb;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-strong: #ffffff;
+  --line: #dbe5f2;
+  --text: #15253b;
+  --muted: #607089;
+  --accent: #0f8bff;
+  --accent-dark: #0b68bf;
+  --accent-soft: #e7f3ff;
+  --hero-a: #0f172a;
+  --hero-b: #123c6b;
+  --hero-c: #1f9d8b;
+  --shadow: 0 20px 45px rgba(18, 38, 63, 0.10);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', 'Trebuchet MS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(circle at top left, rgba(15, 139, 255, 0.16), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(31, 157, 139, 0.14), transparent 28%),
+    linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+code {
+  font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}

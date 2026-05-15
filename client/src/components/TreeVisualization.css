@@ -1,0 +1,41 @@
+/* client/src/components/TreeVisualization.css */
+.tree-visualization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.14);
+}
+
+.tree-canvas {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 2px solid #bfdbfe;
+  border-radius: 10px;
+  background: #f8fbff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tree-visualization-container {
+  text-align: center;
+}
+
+.tree-info {
+  background: #34495e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+.operation-status {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}

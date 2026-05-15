@@ -1,0 +1,101 @@
+.graph-visualization {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+  border: 1px solid #d7e5f5;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.graph-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: radial-gradient(circle at top, #ffffff 0%, #f3f8ff 70%, #edf5ff 100%);
+  border-radius: 14px;
+  border: 1px solid #d7e5f5;
+}
+
+.graph-edge {
+  stroke: #9db4d0;
+  stroke-width: 4;
+}
+
+.graph-edge-active {
+  stroke: #f97316;
+  stroke-width: 6;
+}
+
+.graph-edge-path {
+  stroke: #10b981;
+  stroke-width: 6;
+}
+
+.graph-edge-mst {
+  stroke: #3f7cff;
+  stroke-width: 6;
+}
+
+.graph-weight {
+  fill: #334155;
+  font-size: 14px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.graph-node {
+  fill: #dbeafe;
+  stroke: #60a5fa;
+  stroke-width: 3;
+}
+
+.graph-node-active {
+  fill: #fed7aa;
+  stroke: #f97316;
+}
+
+.graph-node-frontier {
+  fill: #ddd6fe;
+  stroke: #8b5cf6;
+}
+
+.graph-node-visited {
+  fill: #bbf7d0;
+  stroke: #22c55e;
+}
+
+.graph-node-path {
+  fill: #6ee7b7;
+  stroke: #10b981;
+}
+
+.graph-node-label {
+  fill: #0f172a;
+  font-size: 18px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.graph-node-meta {
+  fill: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.graph-status {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.graph-operation {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.graph-lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  color: #475569;
+  font-size: 0.95rem;
+}

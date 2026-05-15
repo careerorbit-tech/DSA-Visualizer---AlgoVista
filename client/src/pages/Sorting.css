@@ -1,0 +1,108 @@
+.sorting-page {
+  padding: 10px 0 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.sorting-page h1 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: var(--text);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.sorting-page > p {
+  text-align: center;
+  color: var(--muted);
+  margin: 0 auto 36px;
+  font-size: 1.05rem;
+  max-width: 780px;
+}
+
+.algorithm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.algorithm-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(246, 250, 255, 0.95) 100%);
+  padding: 26px;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(219, 229, 242, 0.95);
+  min-height: 240px;
+}
+
+.algorithm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.14);
+  border-color: rgba(15, 139, 255, 0.34);
+}
+
+.algorithm-card h3 {
+  color: var(--text);
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+}
+
+.algorithm-card p {
+  color: var(--muted);
+  margin: 14px 0 20px;
+  flex-grow: 1;
+}
+
+.algorithm-tag {
+  align-self: flex-start;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.view-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, var(--accent) 0%, #0ea5a3 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: auto;
+}
+
+.algorithm-card-disabled {
+  opacity: 0.7;
+  cursor: default;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .sorting-page {
+    padding: 0 0 18px;
+  }
+
+  .algorithm-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .algorithm-card {
+    min-height: 210px;
+    padding: 22px;
+  }
+}

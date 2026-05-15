@@ -1,0 +1,126 @@
+.library-page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4px 0 26px;
+}
+
+.library-hero {
+  margin-bottom: 30px;
+  padding: 34px 30px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(15, 139, 255, 0.14), transparent 24%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(243, 248, 255, 0.98) 100%);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.library-hero-copy {
+  max-width: 820px;
+}
+
+.library-eyebrow {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.library-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 14px;
+}
+
+.library-hero p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.library-card {
+  text-decoration: none;
+  color: inherit;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(247, 250, 255, 0.96) 100%);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.library-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.14);
+  border-color: rgba(15, 139, 255, 0.35);
+}
+
+.library-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.library-status,
+.library-count {
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 6px 10px;
+}
+
+.library-status.live {
+  background: #e7f8ef;
+  color: #127a46;
+}
+
+.library-status.roadmap {
+  background: #fef3c7;
+  color: #9a5800;
+}
+
+.library-count {
+  background: #eef4fb;
+  color: var(--muted);
+}
+
+.library-card h3 {
+  font-size: 1.34rem;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.library-card p {
+  color: var(--muted);
+  flex: 1;
+}
+
+.library-action {
+  margin-top: 18px;
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .library-hero {
+    padding: 26px 22px;
+  }
+}
